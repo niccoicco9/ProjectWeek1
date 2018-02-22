@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="common.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="index.css" type="text/css" media="screen">
+    <title id="headTitle">Austin Rodriguez</title>
+</head>
+<body onload="loadInformation();">
+	<header>
+		<h1 id="headerName" class="centratura"> <div id="headerSurname" class="maiuscolo allineato"></div></h1>
+		<h2> Software Engeneer </h2><br><br>
+		<nav class="externIcon centratura">
+			<div class="internIcon backgroundLink">
+				<a href="index.html">
+					<img src="ico/casa.png" class="linkIcon centratura">
+				</a>	
+			</div>			
+
+			<div class="internIcon backgroundLink">
+				<a href="contact.html">
+					<img src="ico/contactme.png" class="linkIcon centratura">
+				</a>	
+			</div>			
+	
+		</nav>
+	</header>
+	
+	<!-- Corpo -->
+	<main>
+		<!-- Con la sezione identifichiamo la sezione relativa ad una persona
+		in modo tale da avere in futuro evenutalmente più sezioni per mostrare
+		quindi più profili inerenti a più persone. -->
+		<section>
+
+			<!-- Con questo primo article identifico la nome, cognome, 
+			immagine profilo ed eventuali profili social. -->
+			<article>
+				<figure>
+					<img id="idFigure" class="imageClass">				
+				</figure>
+
+				<div id="divName" class="divNameClass"></div>
+				<div id="divSub">Software Engeneer</div>	
+				<table class="socialTable">
+					<tr>
+						<td class="socialCell"><img src="ico/facebook.png" class="socialIcon"></td>
+						<td class="socialCell"><img src="ico/insta.png" class="socialIcon"></td>
+						<td class="socialCell"><img src="ico/linke.png" class="socialIcon"></td>
+						<td class="socialCell"><img src="ico/twitter.png" class="socialIcon"></td>
+					</tr>
+				</table>
+			</article>
+
+			<!-- Con il secondo article identifico le informazioni sulla persona
+			in forma tabellare prima e poi un riassunto dello stesso. -->
+			<article>
+				<div id="infoTable" class="divInfoTableClass">
+					<table id="idTabella" class="infoTableClass">
+						<tr>
+							<td class="colonna1">Età</td>
+							<td class="colonna2" id="dataAge"></td>
+						</tr>
+						<tr>
+							<td class="colonna1">Indirizzo</td>
+							<td class="colonna2" id="dataAddress"></td>
+						</tr>
+						<tr>
+							<td class="colonna1">E-Mail</td>
+							<td class="colonna2" id="dataEmail"></td>						
+						</tr>
+						<tr>
+							<td class="colonna1">Telefono</td>
+							<td class="colonna2" id="dataPhone"></td>						
+						</tr>
+						<tr>
+							<td class="colonna1">Cellulare</td>
+							<td class="colonna2" id="dataMobile"></td>						
+						</tr>
+					</table>
+				</div>
+				<p>
+					<div class="titoloParagrafo">About me</div>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odit vel expedita sequi dignissimos amet ullam dolorem illum deleniti impedit. Veniam officiis hic quo numquam vitae laborum eius consequuntur non.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odit vel expedita sequi dignissimos amet ullam dolorem illum deleniti impedit. Veniam officiis hic quo numquam vitae laborum eius consequuntur non.
+				</p>
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<div class="borderDotted">
+			<div class="titleSectionFooter">Copyright: </div>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea cupiditate repellat at libero esse, voluptates ipsam nostrum fuga, consequuntur veniam hic architecto non facere nulla aperiam eos rem voluptate distinctio.
+		</div>
+		<div>
+			<table>
+				<th class="titleSectionFooter">
+					Social:
+				</th>
+				<tr>
+					<td>
+						<a href="" target="_blank" title="Facebook.com"><img src="ico/facebook.png" alt="facebook.it" class="socialIcon"></a>
+					</td>
+					<td>
+						<a href="" target="_blank" title="Instagram.com"><img src="ico/insta.png" alt="instagram.com" class="socialIcon"></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="" target="_blank" title="LinkedIn.com"><img src="ico/linke.png" alt="linkedin.com" class="socialIcon"></a>
+					</td>
+					<td>
+						<a href="" target="_blank" title="Twitter.com"><img src="ico/twitter.png" alt="twitter.com" class="socialIcon"></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</footer>
+	<script src="generatorePersona.js"></script>
+	<script src="commonScript.js"></script>
+	<script src="scriptPerson.js"></script>
+</body>
