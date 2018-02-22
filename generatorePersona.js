@@ -1,15 +1,18 @@
+/* exported extractRandomUser */
+
+
 var Name = {
     title: 'mr.',
     first: 'Mario',
     last: 'Rossi'
-}
+};
 
 var Location = {
     street: 'Corso como',
     city: 'Milano',
     state: 'Italia',
     postcode: 20100
-}
+};
 
 var Login = {
     username: 'mario',
@@ -18,17 +21,17 @@ var Login = {
     md5: 6342234,
     sha1: 'bvsbwr4345653',
     sha256: 'sdgsntdhergwefa34'
-}
+};
 
 var Id = {
     name: 'mrx',
     value: '34'
-}
+};
 var Picture = {
     large: "https://randomuser.me/api/portraits/men/83.jpg",
     medium: "https://randomuser.me/api/portraits/med/men/83.jpg",
     thumbnail: "https://randomuser.me/api/portraits/thumb/men/83.jpg"
-}
+};
 var Persona = {
     gender: 'male',
     name: Name,
@@ -43,19 +46,24 @@ var Persona = {
     picture: Picture,
     nat: 'It',
     setNation: function(nazione){
+        'use strict';
         this.nat= nazione;
     }
-}
+};
 
 var getRandomUser = function (nazione){
+    'use strict';
     var tempP= Persona;
     tempP.setNation(nazione);
     //tempP.nat = nazione;
     return tempP;
-}
+};
 console.log(getRandomUser('uk').nat);
 
+
+
 function extractRandomUser(nazione) {
+    'use strict';
     var tempP= Persona;
     tempP.setNation(nazione);
     //tempP.nat = nazione;

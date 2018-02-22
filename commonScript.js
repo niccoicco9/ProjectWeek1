@@ -1,4 +1,7 @@
+/* exported loadHeaderInformation */
+
 function loadHeaderInformation(persona){
+    'use strict';
     var headerSurname = document.getElementById('headerSurname').cloneNode(true);
     headerSurname.textContent = persona.name.last;
     var headerName = document.getElementById('headerName');

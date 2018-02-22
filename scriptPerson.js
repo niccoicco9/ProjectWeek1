@@ -1,4 +1,8 @@
+/* exported loadInformation */
+/* global extractRandomUser, loadHeaderInformation */
+
 function loadInformation(){
+    'use strict';
     var persona = extractRandomUser('It');
 
     //Header
@@ -21,6 +25,7 @@ function loadInformation(){
 //sottrazione tra la data attuale e la data di nascita della persona.
 //Quando vado a fare il ritorno sottraggo 1970 perché vengono determinati a partire dall 1-1-1970.
 function calculateAge(dateOfBorn){
+    'use strict';
     var year = dateOfBorn.substr(0,4);
     var month = dateOfBorn.substr(5,2);
     var day = dateOfBorn.substr(8,2);
