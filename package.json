@@ -1,0 +1,23 @@
+{
+  "name": "projectweek1",
+  "version": "1.0.0",
+  "description": "Progetto della prima settimana sulla visualizzazione delle informazioni personali di un utente",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wantedlex/ProjectWeek1.git"
+  },
+  "keywords": [
+    "project1",
+    "progetto1"
+  ],
+  "author": "Alessandro Corrado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wantedlex/ProjectWeek1/issues"
+  },
+  "homepage": "https://github.com/wantedlex/ProjectWeek1#readme"
+}
