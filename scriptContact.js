@@ -1,7 +1,8 @@
 /* exported loadInformation */
-/* global loadHeaderInformation */
+/* global loadHeaderInformation, $*/
 
 function loadInformation(){
     'use strict';
+    setTimeout($('body').loading('toggle'),2000);
     loadHeaderInformation();
 }
