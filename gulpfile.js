@@ -15,7 +15,7 @@ gulp.task('default', function(){
 //Mi permette di copiare tutti i file contenuti nella cartella nella cartella dist ad eccezione delle cartelle
 gulp.task('copyAllFile', function(){
     gulp.src('*.*').pipe(gulp.dest('dist'));    //Copio tutti i file dalla cartella principale
-    gulp.src('ico/*.*').pipe(gulp.dest('dist')); //Copio tutte le immagini della cartella
+    gulp.src('ico/*.*').pipe(gulp.dest('dist/ico')); //Copio tutte le immagini della cartella
 });
 
 
