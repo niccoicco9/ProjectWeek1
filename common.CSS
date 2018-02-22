@@ -53,6 +53,11 @@ a:visited{
 	height: 30px;
 	margin: 0px auto;
 }
+
+
+.capitalizzazione{
+	text-transform: capitalize;
+}
 /**************************************************************************/
 
 

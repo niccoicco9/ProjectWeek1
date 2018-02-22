@@ -1,21 +1,25 @@
 /* exported loadInformation */
-/* global extractRandomUser, loadHeaderInformation */
+/* global loadHeaderInformation */
 
 function loadInformation(){
     'use strict';
-    var persona = extractRandomUser('It');
+    $.getJSON('https://randomuser.me/api/', function(persona){
 
-    //Header
-    loadHeaderInformation(persona);
-    
-    //Body
-    document.getElementById('divName').textContent = persona.name.first + ' ' + persona.name.last;  //Aggiorno il nome e cognome
-    document.getElementById('idFigure').src = persona.picture.large; //Aggiorno l'immagine del profilo
-    document.getElementById('dataAge').textContent = calculateAge(persona.dob);
-    document.getElementById('dataAddress').textContent = persona.location.street + ', ' + persona.location.city + ' ' + persona.location.postcode + ', ' + persona.location.state; //Aggiorno l'indirizzo
-    document.getElementById('dataEmail').textContent = persona.email;   //Aggiorno l'e-mail
-    document.getElementById('dataPhone').textContent = persona.phone;   //Aggiorno il numero di casa
-    document.getElementById('dataMobile').textContent = persona.cell;   //Aggiorno il numero di cellulare
+        //Header
+        loadHeaderInformation(persona.results[0]);
+        localStorage.name = persona.results[0].name.first;
+        localStorage.surname = persona.results[0].name.last;
+        console.log(persona.results[0]);
+        
+        //Body
+        document.getElementById('divName').textContent = persona.results[0].name.first + ' ' + persona.results[0].name.last;  //Aggiorno il nome e cognome
+        document.getElementById('idFigure').src = persona.results[0].picture.large; //Aggiorno l'immagine del profilo
+        document.getElementById('dataAge').textContent = calculateAge(persona.results[0].dob);
+        document.getElementById('dataAddress').textContent = persona.results[0].location.street + ', ' + persona.results[0].location.city + ' ' + persona.results[0].location.postcode + ', ' + persona.results[0].location.state; //Aggiorno l'indirizzo
+        document.getElementById('dataEmail').textContent = persona.results[0].email;   //Aggiorno l'e-mail
+        document.getElementById('dataPhone').textContent = persona.results[0].phone;   //Aggiorno il numero di casa
+        document.getElementById('dataMobile').textContent = persona.results[0].cell;   //Aggiorno il numero di cellulare
+    });
 }
 
 

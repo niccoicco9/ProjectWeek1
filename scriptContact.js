@@ -1,8 +1,7 @@
 /* exported loadInformation */
-/* global extractRandomUser, loadHeaderInformation */
+/* global loadHeaderInformation */
 
 function loadInformation(){
     'use strict';
-    var persona = extractRandomUser('It');
-    loadHeaderInformation(persona);
+    loadHeaderInformation();
 }
