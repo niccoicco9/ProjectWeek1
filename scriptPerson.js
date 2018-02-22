@@ -1,9 +1,29 @@
 /* exported loadInformation */
-/* global loadHeaderInformation */
+/* global loadHeaderInformation, $ */
+
+$('body').loading({
+    onStart: function(loading) {
+        'use strict';
+        loading.overlay.slideDown(400);
+    },
+    onStop: function(loading) {
+        'use strict';
+        loading.overlay.slideUp(400);
+    },
+    theme: 'dark'
+  });
+
 
 function loadInformation(){
     'use strict';
     $.getJSON('https://randomuser.me/api/', function(persona){
+        if (persona){
+             $('body').loading('toggle');
+        }
+        else {
+            setTimeout($('body').loading('toggle'),2000);
+        }
+
 
         //Header
         loadHeaderInformation(persona.results[0]);
@@ -20,6 +40,7 @@ function loadInformation(){
         document.getElementById('dataPhone').textContent = persona.results[0].phone;   //Aggiorno il numero di casa
         document.getElementById('dataMobile').textContent = persona.results[0].cell;   //Aggiorno il numero di cellulare
     });
+
 }
 
 
