@@ -1,5 +1,5 @@
 /* exported loadInformation */
-/* global extractRandomUser, loadHeaderInformation */
+/* global loadHeaderInformation */
 
 function loadInformation(){
     'use strict';
