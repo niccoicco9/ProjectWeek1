@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="common.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="contact.css" type="text/css" media="screen">
+    <title>Austin Rodriguez</title>
+</head>
+<body onload="loadInformation();">
+	<header>
+		<h1 id="headerName" class="centratura"> <div id="headerSurname" class="maiuscolo allineato"></div></h1>
+		<h2> Software Engeneer </h2><br><br>
+		<nav class="externIcon centratura">
+			<div class="internIcon backgroundLink">
+				<a href="index.html">
+					<img src="ico/casa.png" class="linkIcon centratura">
+				</a>	
+			</div>			
+
+			<div class="internIcon backgroundLink">
+				<a href="contact.html">
+					<img src="ico/contactme.png" class="linkIcon centratura">
+				</a>	
+			</div>			
+	
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<article>
+				<form action="" method="post" class="centratura">
+					<table id="formTable" class="centratura">
+						<tr class="titleTable">
+							<th colspan="2">Scrivimi</th>
+						</tr>
+						<tr>
+							<td><label for="name">Nome: </label></td>
+							<td><input type="text" id = "name" class="textBox" placeholder="Scrivi il tuo nome..."> </td>
+						</tr>
+						<tr>
+							<td><label for="surname">Cognome: </label></td>
+							<td><input type="text" id="surname" class="textBox" placeholder="Scrivi il tuo cognome..."></td>
+						</tr>
+						<tr>
+							<td><label for="idMail">E-Mail: </label></td>
+							<td><input type="email" id="idMail" class="textBox" placeholder="Scrivi la tua e-mail..."> </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>							
+								<textarea id="msg" rows="10" placeholder="Lasciami un messaggio..."></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="submit" class="bottoni" value="Inoltra messaggio">
+								<input type="reset" class="bottoni" value="Ripristina">								
+							</td>
+						</tr>
+					</table>
+				</form>			
+			</article>			
+		</section>		
+	</main>
+
+	<footer>
+		<div class="borderDotted">
+			<div class="titleSectionFooter">Copyright: </div>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea cupiditate repellat at libero esse, voluptates ipsam nostrum fuga, consequuntur veniam hic architecto non facere nulla aperiam eos rem voluptate distinctio.
+		</div>
+		<div>
+			<table>
+				<th class="titleSectionFooter">
+					Social:
+				</th>
+				<tr>
+					<td>
+						<a href="" target="_blank" title="Facebook.com"><img src="ico/facebook.png" alt="facebook.it" class="socialIcon"></a>
+					</td>
+					<td>
+						<a href="" target="_blank" title="Instagram.com"><img src="ico/insta.png" alt="instagram.com" class="socialIcon"></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="" target="_blank" title="LinkedIn.com"><img src="ico/linke.png" alt="linkedin.com" class="socialIcon"></a>
+					</td>
+					<td>
+						<a href="" target="_blank" title="Twitter.com"><img src="ico/twitter.png" alt="twitter.com" class="socialIcon"></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</footer>
+
+	<script src="generatorePersona.js"></script>
+	<script src="commonScript.js"></script>
+	<script src="scriptContact.js"></script>
+</body>

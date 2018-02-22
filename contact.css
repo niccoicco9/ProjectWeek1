@@ -1,0 +1,95 @@
+/*
+ Azzurro: #58A7C6
+ Rosa per particolari: #EB418B
+ Giallo per sottotitoli: #FDE58B
+ Melanzana per scrittura: #490D27
+*/
+
+section{
+	width: 100%;
+}
+
+article{
+	width: 75%;
+	background: whitesmoke;
+	margin: 10px auto;
+	border: thin solid #58A7C6;
+	border-radius: 1%;
+}
+
+form{
+	widows: 75%;
+	position: relative;
+}
+
+
+.titleTable{
+	text-align: left;
+	color: #490D27;
+	font-size: 20pt;
+	text-decoration: underline;
+	margin: 5px 0px;
+}
+
+label{
+	font-size: 14pt;
+	font-weight: bold;
+	margin-right: 50px; 
+	width: 30px;
+}
+
+
+.textBox{
+	width: 70%;
+	height: 50px;
+	margin: 5px;
+	font-size: 14pt;
+	width: 75%;
+}
+
+#formTable{
+	width: 80%;
+	position: relative;
+	margin: auto;
+	padding: 10px 0px;
+}
+
+
+
+
+
+th{
+	font-size: 26pt;
+	color: #490D27;
+}
+
+label{
+	font-size: 14pt;
+	font-weight: bold;
+	margin-right: 50px; 
+	width: 200px;
+}
+
+.textBox{
+	width: 600px;
+	height: 50px;
+	margin: 5px;
+	font-size: 14pt;
+	width: 75%;
+}
+
+textarea{
+	font-size: 14pt;
+	margin: 5px;
+	width: 75%;
+	overflow: hidden;
+}
+
+
+.bottoni{
+	margin: 20px 0px;
+	font-size: 11pt;
+	width: 130px;
+	height: 30px;
+	border-radius: 5%;
+}

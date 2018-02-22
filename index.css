@@ -1,0 +1,106 @@
+/*
+ Azzurro: #58A7C6
+ Rosa per particolari: #EB418B
+ Giallo per sottotitoli: #FDE58B
+ Melanzana per scrittura: #490D27
+*/
+
+
+/************************SECTION****************************/
+
+section{
+	margin: 20px auto 50px auto;
+	width: 75%;
+	background: whitesmoke;
+	border: thin solid #58A7C6;
+	border-radius: 1%;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+
+article{
+	clear: both;
+	width: 100%
+}
+/***********************************************************/
+
+
+
+/*************************Article 1*************************/
+figure{
+	float: left;
+	margin: 20px 50px 20px 20px;
+}
+
+.imageClass {
+	width: 150px;
+	height:150px;
+}
+
+
+.divNameClass{
+	padding: 20px 0px 0px 0px;
+	font-size: 28pt;
+	color: #58A7C6;
+}
+
+.divSubtitleClass{
+	color: #490D27;
+	font-size: 18pt;
+}
+
+
+.socialCell{
+	width: 100px;
+}
+
+.socialTable{
+	margin: 10px 0px;
+}
+
+/*********************************************************/
+
+
+
+/**********************Article 2**************************/
+.colonna1{
+	padding: 0px 20px 10px 0px;
+	font-weight: bold;
+	border: thin solid #EEE;	
+	color: #490D27;
+}
+
+.colonna2{
+	padding: 0px 20px 10px 0px;
+	font-style:italic;
+	background: #EEE;
+	border: thin solid #EEE;
+}
+
+.divInfoTableClass{
+	margin: 0px 20px;
+}
+
+.infoTableClass{
+	float: left;
+	margin: 10px 20px 0px 10px;
+	border: thin solid #EEE;
+	border-collapse: collapse;
+}
+
+.titoloParagrafo{
+	color:  #490D27;
+	font-size: 18pt;
+	padding: 0px 0px 5px 0px;
+}
+
+p{
+	color: #222;
+	font-size: 14pt;
+}
+
+
+
+
+
