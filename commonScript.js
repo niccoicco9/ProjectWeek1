@@ -21,5 +21,5 @@ function loadHeaderInformation(persona){
     headerName.textContent = persona.name.first + ' ';
     headerName.appendChild(headerSurname);
     var title = document.getElementById('headTitle');
-    title.textContent = persona.name.first + ' ' + persona.name.last;
+    title.textContent = (persona.name.first + ' ' + persona.name.last).toUpperCase();
 }

@@ -53,6 +53,11 @@ a:visited{
 	height: 30px;
 	margin: 0px auto;
 }
+
+
+.capitalizzazione{
+	text-transform: capitalize;
+}
 /**************************************************************************/
 
 
@@ -97,7 +102,6 @@ h1{
 	text-align: center;
 	color:#490D27;
 	font-family: Helvetica, Arial, sans-serif;
-	text-transform: capitalize;
 }
 
 /*Ci sono tanti caratteri che emulano la firma online: non appena il professore lo permette 
