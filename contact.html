@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="common.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="contact.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="node_modules/jquery-easy-loading/dist/jquery.loading.css">
     <title id="headTitle"></title>
 </head>
 <body onload="loadInformation();">
@@ -30,22 +31,22 @@
 	<main>
 		<section>
 			<article>
-				<form action="" method="post" class="centratura">
+				<form action="" method="post" class="centratura" id="formContact">
 					<table id="formTable" class="centratura">
 						<tr class="titleTable">
 							<th colspan="2">Scrivimi</th>
 						</tr>
 						<tr>
-							<td><label for="name">Nome: </label></td>
-							<td><input type="text" id = "name" class="textBox" placeholder="Scrivi il tuo nome..."> </td>
+							<td><label for="name.first">Nome: </label></td>
+							<td><input type="text" id="name.first" name="name.first" class="textBox" placeholder="Scrivi il tuo nome..."> </td>
 						</tr>
 						<tr>
-							<td><label for="surname">Cognome: </label></td>
-							<td><input type="text" id="surname" class="textBox" placeholder="Scrivi il tuo cognome..."></td>
+							<td><label for="name.last">Cognome: </label></td>
+							<td><input type="text" id="name.last" name="name.last" class="textBox" placeholder="Scrivi il tuo cognome..."></td>
 						</tr>
 						<tr>
-							<td><label for="idMail">E-Mail: </label></td>
-							<td><input type="email" id="idMail" class="textBox" placeholder="Scrivi la tua e-mail..."> </td>
+							<td><label for="email">E-Mail: </label></td>
+							<td><input type="email" id="email" name="email" class="textBox" placeholder="Scrivi la tua e-mail..."> </td>
 						</tr>
 						<tr>
 							<td></td>
@@ -55,7 +56,7 @@
 						</tr>
 						<tr>
 							<td colspan="2">
-								<input type="submit" class="bottoni" value="Inoltra messaggio">
+								<input id="submitButton" type="button" class="bottoni" value="Inoltra messaggio">
 								<input type="reset" class="bottoni" value="Ripristina">								
 							</td>
 						</tr>
@@ -95,6 +96,8 @@
 		</div>
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="node_modules/jquery-easy-loading/dist/jquery.loading.js"></script>
 	<script src="commonScript.js"></script>
 	<script src="scriptContact.js"></script>
 </body>
