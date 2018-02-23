@@ -15,24 +15,13 @@ $('body').loading({
 
 function loadInformation(){
     'use strict';
-    setTimeout($('body').loading('toggle'),2000);
+    setTimeout($('body').loading('toggle'),1000);
     loadHeaderInformation();
 }
 
 
 
-function submitPost(){
+$('#submitButton').click(function(){ 
     'use strict';
-    var persona = {
-        "name": {
-            "title": "mr",
-            "first": "Dries",
-            "last": "Mertens"
-        }
-    };
-
-    $.post("http://localhost:3000/results", persona).done(function(data){
-        alert("Dati caricati: " + data);
-    });
-
-}
+    $.post("http://localhost:3000/results", $("#formContact").serialize());
+});
