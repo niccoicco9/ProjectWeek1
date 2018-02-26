@@ -13,17 +13,13 @@
 		<h1 id="headerName" class="centratura capitalizzazione"> <div id="headerSurname" class="maiuscolo allineato capitalizzazione"></div></h1>
 		<h2> Software Engineer </h2><br><br>
 		<nav>
-			<div class="internIcon backgroundLink">
-				<a href="index.html">
-					<img src="ico/casa.png" class="dimensionNavigationLink">
-				</a>	
-			</div>			
+			<a href="index.html" class="backgroundLink">
+				<img src="ico/casa.png" class="dimensionNavigationLink">
+			</a>	
 
-			<div class="internIcon backgroundLink">
-				<a href="contact.html">
-					<img src="ico/contactme.png" class="dimensionNavigationLink">
-				</a>	
-			</div>			
+			<a href="contact.html" class="backgroundLink">
+				<img src="ico/contactme.png" class="dimensionNavigationLink">
+			</a>			
 	
 		</nav>
 	</header>
@@ -32,7 +28,25 @@
 		<section>
 			<article>
 				<form action="" method="post" class="centratura" id="formContact">
-					<table id="formTable" class="centratura">
+					<div id="titleTable">Scrivimi:</div>
+
+					<label for="name.first">Nome: </label>
+					<input type="text" id="name.first" name="name.first" class="textBox" placeholder="Scrivi il tuo nome...">
+
+					<label for="name.last">Cognome: </label>
+					<input type="text" id="name.last" name="name.last" class="textBox" placeholder="Scrivi il tuo cognome...">
+
+					<label for="email">E-Mail: </label>
+					<input type="email" id="email" name="email" class="textBox" placeholder="Scrivi la tua e-mail...">
+
+					<textarea id="msg" rows="10" placeholder="Lasciami un messaggio..."></textarea>
+
+					<div>
+						<input id="submitButton" type="button" class="bottoni" value="Inoltra messaggio">
+						<input type="reset" class="bottoni" value="Ripristina">	
+					</div>
+
+					<!--<table id="formTable" class="centratura">
 						<tr class="titleTable">
 							<th colspan="2">Scrivimi</th>
 						</tr>
@@ -51,16 +65,16 @@
 						<tr>
 							<td></td>
 							<td>							
-								<textarea id="msg" rows="10" placeholder="Lasciami un messaggio..."></textarea>
+								
 							</td>
 						</tr>
 						<tr>
 							<td colspan="2">
-								<input id="submitButton" type="button" class="bottoni" value="Inoltra messaggio">
-								<input type="reset" class="bottoni" value="Ripristina">								
+															
 							</td>
 						</tr>
-					</table>
+					</table>-->
+
 				</form>			
 			</article>			
 		</section>		

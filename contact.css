@@ -4,7 +4,7 @@
  Giallo per sottotitoli: #FDE58B
  Melanzana per scrittura: #490D27
 */
-
+/*
 section{
 	width: 100%;
 }
@@ -92,4 +92,31 @@ textarea{
 	width: 130px;
 	height: 30px;
 	border-radius: 5%;
+}*/
+
+section{
+	width: 100%;
+}
+
+article{
+	background: whitesmoke;
+	width: 80%;
+	border: thin solid #58A7C6;
+	border-radius: 1%;
+	margin: 10px auto;
+}
+
+#formContact{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+#titleTable{
+	font-size:16pt;
+	font-style:normal;
+	color: #490D27;
+	font-style: oblique;
+	letter-spacing: 5px;
+	margin: 10px;
 }
