@@ -4,6 +4,163 @@
  Giallo per sottotitoli: #FDE58B
  Melanzana per scrittura: #490D27
 */
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	min-width: 240px;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-family: Helvetica, Arial;
+	color: #222;
+}
+
+.maiuscolo{
+	font-weight: bold;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+a:visited{
+	color:inherit;
+	text-decoration: none;
+}
+
+/*Definisce le proprietà delle immagini dei social*/
+.socialIcon{
+	width: 30px;
+	height: 30px;
+}
+
+
+.capitalizzazione{
+	text-transform: capitalize;
+}
+
+/*Colore di sfondo dei link: per un eventuale menù aggiuntivo.*/
+.backgroundLink{
+	background: whitesmoke;
+}
+
+.backgroundLink:hover{
+	background: #f49e42;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background: #58A7C6;
+}
+
+.dimensionNavigationLink{
+	width: 50px;
+	height: 50px;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#headerName{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#headerSurname{
+	padding: 0px 0px 0px 10px;
+}
+
+h2{
+	margin: auto;
+	font-style: italic;
+	font-size: 24pt;
+	font-family: SignPainter, Noteworthy, Palatino Linotype, Palatino;
+	color: #FDE58B;
+	text-align: center;
+}
+
+.internIcon{
+	margin: 0px 20px;
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	border: thin solid #58A7C6;
+}
+
+.internIcon a{
+	height:70px;
+	width:70px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.internIcon a img{
+	align-self: center;
+}
+
+
+
+
+footer{
+	background: #58A7C6;
+	display: flex;
+	bottom: 0px;
+	color: #FDE58B;
+	font-size: 12pt;
+}
+
+#footerItem1{
+	flex-basis: 30%;
+}
+
+.footerItem{
+	padding: 10px;
+	margin: 10px 10px;
+}
+
+.borderDotted{
+	border-right: thin dotted whitesmoke;
+}
+
+.titleSectionFooter{
+	font-size:16pt;
+	font-style:normal;
+	color: #490D27;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+}
+
 /*
 /******************************GENERALI************************************
 body{
@@ -181,87 +338,3 @@ footer div table tr td{
 }
 
 /*************************************************************************/
-
-body{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-	font-family: Helvetica, Arial;
-	color: #222;
-}
-
-.maiuscolo{
-	font-weight: bold;
-}
-
-a{
-	color: inherit;
-	text-decoration: none;
-}
-
-a:visited{
-	color:inherit;
-	text-decoration: none;
-}
-
-/*Definisce le proprietà delle immagini dei social*/
-.socialIcon{
-	width: 30px;
-	height: 30px;
-}
-
-
-.capitalizzazione{
-	text-transform: capitalize;
-}
-
-
-
-
-
-header{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	background: #58A7C6;
-}
-
-.linkIcon{
-	width: 50px;
-	height: 50px;
-}
-
-nav{
-	display: flex;
-}
-
-#headerName{
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-#headerSurname{
-	padding: 0px 0px 0px 10px;
-}
-
-h2{
-	margin: auto;
-	font-style: italic;
-	font-size: 24pt;
-	font-family: SignPainter, Noteworthy, Palatino Linotype, Palatino;
-	color: #FDE58B;
-	text-align: center;
-}
-
-.internIcon{
-	margin: 0px 20px;
-	width: 70px;
-	height: 70px;
-	border-radius: 100%;
-	margin: 0px 10px;
-	border: thin solid #58A7C6;
-}
