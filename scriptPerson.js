@@ -29,6 +29,12 @@ function loadInformation(){
         loadHeaderInformation(persona.results[0]);
         localStorage.name = persona.results[0].name.first;
         localStorage.surname = persona.results[0].name.last;
+
+        //Effettuo il localStorage per queste informazioni che mi serviranno nella pagina dei contatti
+        localStorage.mail = persona.results[0].email;
+        localStorage.phone = persona.results[0].phone;
+        localStorage.cell = persona.results[0].cell;
+        localStorage.completeAddress = persona.results[0].location.street + ' - ' + persona.results[0].location.city + ' (' + persona.results[0].nat + ')';
         console.log(persona.results[0]);
         
         //Body

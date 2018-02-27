@@ -115,6 +115,7 @@ section{
 	margin: 10px auto;
 	display: flex;
 	justify-content: space-between;
+	flex-direction: row;
 }
 
 
@@ -124,12 +125,14 @@ article{
 
 #contactArticle{
 	background: rgb(224, 229, 231);
-	margin: 15px;
+	margin: 15px 25px;
 	width: 20%;
+	min-width: 180px;
 }
 
 #messageArticle{
 	width: 80%;
+	min-width: 230px;
 }
 
 #formContact{
@@ -182,8 +185,21 @@ textarea{
 }
 
 .contactTitle{
-	text-transform: uppercase;
+	font-variant: small-caps;
 	font-weight: bold;
-	font-size: 13pt;
+	font-size: 14pt;
 	color:rgb(218, 0, 0);
+}
+
+#myEmail{
+	text-transform: lowercase;
+}
+
+#myAddress{
+	text-transform: capitalize;	
+}
+
+#myEmail, #myAddress, #myPhone, #myCell{
+	font-style: italic;
+	word-spacing: 1px;
 }
