@@ -93,7 +93,7 @@ textarea{
 	height: 30px;
 	border-radius: 5%;
 }*/
-
+/*
 section{
 	width: 100%;
 }
@@ -105,16 +105,42 @@ article{
 	border-radius: 1%;
 	margin: 10px auto;
 }
+*/
+
+section{
+	background: whitesmoke;
+	width: 80%;
+	border: thin solid #58A7C6;
+	border-radius: 1%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+article{
+	padding: 10px 25px;
+}
+
+#contactArticle{
+	background: rgb(224, 229, 231);
+	margin: 15px;
+	width: 20%;
+}
+
+#messageArticle{
+	width: 80%;
+}
 
 #formContact{
 	display: flex;
 	flex-direction: column;
-	padding: 10px 25px;
 }
 
 #titleTable{
-	font-size:20pt;
+	font-size:22pt;
 	font-style:normal;
+	font-weight: 500;
 	color: #58A7C6;
 	letter-spacing: 5px;
 	letter-spacing: 5px;
@@ -155,3 +181,9 @@ textarea{
 	letter-spacing: 1px;
 }
 
+.contactTitle{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13pt;
+	color:rgb(218, 0, 0);
+}
