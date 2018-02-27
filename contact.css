@@ -113,10 +113,10 @@ article{
 }
 
 #titleTable{
-	font-size:16pt;
+	font-size:20pt;
 	font-style:normal;
-	color: #490D27;
-	font-style: oblique;
+	color: #58A7C6;
+	letter-spacing: 5px;
 	letter-spacing: 5px;
 	margin: 10px;
 }
