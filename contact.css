@@ -203,3 +203,36 @@ textarea{
 	font-style: italic;
 	word-spacing: 1px;
 }
+
+#containerButton{
+	display: flex;
+	justify-content: flex-end;
+}
+
+button{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px 5px 0px 0px;
+	width: 150px;
+	height:30px;
+	min-width: 150px;
+}
+
+#buttonSubmit{
+	margin-right: 20px;
+	border-bottom: 3px solid green;
+	background: #a5ffa0;
+}
+
+#buttonSubmit:hover{
+	background: #4bd845;
+}
+
+#buttonReset{
+	border-bottom: 3px solid rgb(209, 206, 8);
+	background: #f5ec75;
+}
+
+#buttonReset:hover{
+	background: #ebde27;
+}
