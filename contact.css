@@ -109,7 +109,7 @@ article{
 #formContact{
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
+	padding: 10px 25px;
 }
 
 #titleTable{
@@ -118,5 +118,40 @@ article{
 	color: #58A7C6;
 	letter-spacing: 5px;
 	letter-spacing: 5px;
-	margin: 10px;
+	margin: 10px 0px 0px 0px;
 }
+
+form p{
+	color: rgb(150, 150, 129);
+	font-size: 14pt;
+}
+
+label{
+	font-weight: bold;
+	font-size: 13pt;
+	color: rgb(78, 72, 72);
+	display: flex;
+	text-transform: uppercase;
+}
+
+label div{
+	color: rgb(218, 0, 0);
+	font-size: 16pt;
+}
+
+input{
+	font-size: 14pt;
+	padding: 5px;
+	margin-top: 2px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+textarea{
+	font-size: 14pt;
+	padding: 5px;
+	margin: 10px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+}
+
