@@ -192,7 +192,25 @@ footer{
 	margin: 0px 0px 10px 0px;
 }
 
-.socialFooter{
-	margin-right: 10px;
+
+.footerItem div{
+	display: flex;
+	flex-direction: row;
 	margin-bottom: 20px;
+	align-items: center;
+}
+
+.footerItem div a{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	margin-right: 10px;
+	padding-top: 5px;
+	border-radius: 3px;
+}
+
+.footerItem div a:hover{
+	background: #509ab7;
 }
