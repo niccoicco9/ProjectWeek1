@@ -79,13 +79,6 @@ section{
 	margin: 10px 0px 0px 0px;
 }
 
-.tableStyle{
-	margin: 10px auto;
-	border: thin solid #EEE;
-	border-collapse: collapse;
-	width: 90%;
-}
-
 .colonna1{
 	padding: 0px 20px 10px 0px;
 	font-weight: bold;
