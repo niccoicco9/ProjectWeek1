@@ -67,6 +67,7 @@ section{
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
+	min-width: 350;
 }
 
 .titleStyle{
@@ -92,6 +93,12 @@ section{
 	background: #EEE;
 	border: thin solid #EEE;
 }
+
+main{
+	flex-grow: 2;
+}
+
+
 
 
 

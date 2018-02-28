@@ -20,9 +20,6 @@ function loadInformation(){
         if (persona){
              $('body').loading('toggle');
         }
-        else {
-            setTimeout($('body').loading('toggle'),2000);
-        }
 
 
         //Header

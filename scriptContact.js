@@ -49,19 +49,29 @@ window.addEventListener('resize', function(){
 
 function resizeContactUs(){
     'use strict';
+    //Mi permette di riposizionare gli elementi a destra ed a sinistra la barra dei contatti personali
+    //e la form in modo che questi vengono visualizzati uno sopra l'altro
     if(window.innerWidth < 780){
         document.getElementsByTagName('section')[0].style.flexDirection = 'column';
         document.getElementsByTagName('section')[0].style.justifyContent = 'center';
         document.getElementById('contactArticle').style.margin = '15px auto';
         document.getElementById('messageArticle').style.margin = 'auto';
-        document.getElementById('contactArticle').style.width = document.getElementById('email').clientWidth - 50 ;
-        document.getElementById('containerButton').style.justifyContent = 'space-around';
+        document.getElementById('contactArticle').style.width = '80%';
     } else{
         document.getElementsByTagName('section')[0].style.flexDirection = 'row';
         document.getElementsByTagName('section')[0].style.justifyContent = 'space-between';
-        document.getElementById('contactArticle').style.width = '20%';
+        document.getElementById('contactArticle').style.width = 'auto';
         document.getElementById('contactArticle').style.margin = '15px';
         document.getElementById('messageArticle').style.margin = '0px';
-        document.getElementById('containerButton').style.justifyContent = 'flex-end';
+    }
+
+    //Arrivati a 500 sono costretto a togliere dinamicamente il margine destro al bottone di submit
+    //altrimenti sarebbe spostato tutt
+    if(window.innerWidth < 500){
+        document.getElementById('containerButton').style.flexDirection = 'column';
+        document.getElementById('buttonSubmit').style.marginRight = '0px';
+    } else {
+        document.getElementById('containerButton').style.flexDirection = 'row';
+        document.getElementById('buttonSubmit').style.marginRight = '20px';
     }
 }

@@ -11,8 +11,6 @@ article{
 #contactArticle{
 	background: rgb(224, 229, 231);
 	margin: 15px 25px;
-	width: 20%;
-	min-width: 180px;
 }
 
 #messageArticle{
@@ -82,6 +80,7 @@ textarea{
 #containerButton{
 	display: flex;
 	justify-content: flex-end;
+	flex-flow: row wrap;
 }
 
 button{
