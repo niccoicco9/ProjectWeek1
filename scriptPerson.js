@@ -48,6 +48,7 @@ function loadInformation(){
 
         //Modello gli elementi in base alla dimensione 
         responsiveElementImageName();
+        responsiveTableInfo();
     });
 
 }
@@ -102,7 +103,7 @@ function responsiveElementImageName(){
 function responsiveTableInfo(){
     'use strict';
     if(window.innerWidth < 570){
-        
+
         var nodeClass = document.getElementsByClassName('rowTable');
         for(var i = 0; i < nodeClass.length; i++){
             nodeClass.item(i).style.flexDirection = 'column';
