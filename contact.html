@@ -28,7 +28,7 @@
 		<section>
 			<article id="messageArticle">
 				<form action="" method="post" class="centratura" id="formContact">
-					<div id="titleTable">Scrivimi</div>
+					<div class="titleStyle">Scrivimi</div>
 					<p>
 						Per ogni tua domanda, delucidazione o anche curiosità, scrivimi e non appena potrò
 						ti ricontatterò sulla mail che mi indichi in basso.
@@ -49,40 +49,6 @@
 						<button type="submit" id="buttonSubmit">Inoltra messaggio</button>
 						<button type="reset" id="buttonReset">Ripristina tutto</button>
 					</div>
-
-					<!--<div>
-						<input id="submitButton" type="button" class="bottoni" value="Inoltra messaggio">
-						<input type="reset" class="bottoni" value="Ripristina">	
-					</div>-->
-
-					<!--<table id="formTable" class="centratura">
-						<tr class="titleTable">
-							<th colspan="2">Scrivimi</th>
-						</tr>
-						<tr>
-							<td><label for="name.first">Nome: </label></td>
-							<td><input type="text" id="name.first" name="name.first" class="textBox" placeholder="Scrivi il tuo nome..."> </td>
-						</tr>
-						<tr>
-							<td><label for="name.last">Cognome: </label></td>
-							<td><input type="text" id="name.last" name="name.last" class="textBox" placeholder="Scrivi il tuo cognome..."></td>
-						</tr>
-						<tr>
-							<td><label for="email">E-Mail: </label></td>
-							<td><input type="email" id="email" name="email" class="textBox" placeholder="Scrivi la tua e-mail..."> </td>
-						</tr>
-						<tr>
-							<td></td>
-							<td>							
-								
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-															
-							</td>
-						</tr>
-					</table>-->
 
 				</form>			
 			</article>	
@@ -109,37 +75,26 @@
 	</main>
 
 	<footer>
-		<div class="borderDotted footerItem" id="footerItem1">
-			<div class="titleSectionFooter">Copyright: </div>
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea cupiditate repellat at libero esse, voluptates ipsam nostrum fuga, consequuntur veniam hic architecto non facere nulla aperiam eos rem voluptate distinctio.
-		</div>
-		<div class="footerItem">
-			<table>
-				<th class="titleSectionFooter">
+			<div class="borderDotted footerItem" id="footerItem1">
+				<div class="titleSectionFooter">Copyright: </div>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea cupiditate repellat at libero esse, voluptates ipsam nostrum fuga, consequuntur veniam hic architecto non facere nulla aperiam eos rem voluptate distinctio.
+			</div>
+			<div class="footerItem">
+				<div class="titleSectionFooter">
 					Social:
-				</th>
-				<tr>
-					<td>
-						<a href="" target="_blank" title="Facebook.com"><img src="ico/facebook.png" alt="facebook.it" class="socialIcon"></a>
-					</td>
-					<td>
-						<a href="" target="_blank" title="Instagram.com"><img src="ico/insta.png" alt="instagram.com" class="socialIcon"></a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="" target="_blank" title="LinkedIn.com"><img src="ico/linke.png" alt="linkedin.com" class="socialIcon"></a>
-					</td>
-					<td>
-						<a href="" target="_blank" title="Twitter.com"><img src="ico/twitter.png" alt="twitter.com" class="socialIcon"></a>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</footer>
+				</div>
+				<div>
+					<a href="#" title="Facebook.it"><i id="social-fb" class="fab fa-facebook-f fa-2x socialFooter"></i></a>
+					<a href="#" title="Instagram.com"><i id="social-insta" class="fab fa-instagram fa-2x socialFooter"></i></a>
+					<a href="#" title="Linkedin.com"><i id="social-in" class="fab fa-linkedin-in fa-2x socialFooter"></i></a>
+					<a href="#" title="Twitter.com"><i id="social-tw" class="fab fa-twitter fa-2x socialFooter"></i></a>
+				</div>
+			</div>
+		</footer>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="node_modules/jquery-easy-loading/dist/jquery.loading.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="commonScript.js"></script>
 	<script src="scriptContact.js"></script>
 </body>

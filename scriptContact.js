@@ -42,12 +42,14 @@ $('#submitButton').click(function(){
 
 /***************************************FUNZIONI GRAFICHE************************************ */
 window.addEventListener('resize', function(){
-    resizeContactUs()
+    'use strict';
+    resizeContactUs();
 });
 
 
 function resizeContactUs(){
-    if(window.innerWidth < 680){
+    'use strict';
+    if(window.innerWidth < 780){
         document.getElementsByTagName('section')[0].style.flexDirection = 'column';
         document.getElementsByTagName('section')[0].style.justifyContent = 'center';
         document.getElementById('contactArticle').style.margin = '15px auto';

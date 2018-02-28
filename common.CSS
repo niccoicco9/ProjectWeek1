@@ -58,7 +58,47 @@ a:visited{
 	background: #f49e42;
 }
 
+section{
+	background: whitesmoke;
+	width: 80%;
+	border: thin solid #58A7C6;
+	border-radius: 1%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
 
+.titleStyle{
+	font-size:22pt;
+	font-style:normal;
+	font-weight: 500;
+	color: #58A7C6;
+	letter-spacing: 5px;
+	letter-spacing: 5px;
+	margin: 10px 0px 0px 0px;
+}
+
+.tableStyle{
+	margin: 10px auto;
+	border: thin solid #EEE;
+	border-collapse: collapse;
+	width: 90%;
+}
+
+.colonna1{
+	padding: 0px 20px 10px 0px;
+	font-weight: bold;
+	border: thin solid #EEE;	
+	color: #490D27;
+}
+
+.colonna2{
+	padding: 0px 20px 10px 0px;
+	font-style:italic;
+	background: #EEE;
+	border: thin solid #EEE;
+}
 
 
 
@@ -87,6 +127,7 @@ nav{
 	flex-wrap: wrap;
 	color: #490D27;
 	font-weight: normal;
+	font-size: 22pt;
 }
 
 #headerSurname{
@@ -149,6 +190,11 @@ footer{
 	font-weight: bold;
 	padding: 0px;
 	margin: 0px 0px 10px 0px;
+}
+
+.socialFooter{
+	margin-right: 10px;
+	margin-bottom: 20px;
 }
 
 /*

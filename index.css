@@ -7,7 +7,7 @@
 
 
 /************************SECTION****************************/
-
+/*
 section{
 	margin: 20px auto 50px auto;
 	width: 75%;
@@ -28,6 +28,7 @@ article{
 
 
 /*************************Article 1*************************/
+/*
 figure{
 	float: left;
 	margin: 20px 50px 20px 20px;
@@ -58,12 +59,13 @@ figure{
 .socialTable{
 	margin: 10px 0px;
 }
-
+*/
 /*********************************************************/
 
 
 
 /**********************Article 2**************************/
+/*
 .colonna1{
 	padding: 0px 20px 10px 0px;
 	font-weight: bold;
@@ -100,7 +102,59 @@ p{
 	font-size: 14pt;
 }
 
+*/
+
+
+/**************************************ARTICLE 1***********************************************/
+#articleImageName{
+	display: flex;
+	justify-content: flex-start;
+}
+
+#containerBaseInfo{
+	display: flex;
+	flex-direction: column;
+}
+
+#divName{
+	margin-bottom: 5px;
+}
+
+#divSub{
+	color: #490D27;
+	font-size: 16pt;
+	margin-bottom: 10px;
+}
+
+section{
+	/*Dovrebbe vincere questa regola essendo flex tutte le section (regola generale inserita in Common)*/
+	flex-direction: column;
+}
+
+#socialDiv{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
 
 
 
 
+/***********************************************ARTICLE 2******************************************/
+#articleAbout{
+
+}
+
+.titoloParagrafo{
+	color:  #490D27;
+	font-size: 18pt;
+	margin: 30px 0px 0px 40px;
+}
+
+p{
+	color: rgb(150, 150, 129);
+	font-size: 12pt;
+	margin: 5px 40px 20px 40px;
+	padding: 0px 0px 20px 0px;
+	border-bottom: 2px solid #EEE;
+}
