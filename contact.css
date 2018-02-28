@@ -4,92 +4,109 @@
  Giallo per sottotitoli: #FDE58B
  Melanzana per scrittura: #490D27
 */
-
-section{
-	width: 100%;
-}
-
 article{
-	width: 75%;
-	background: whitesmoke;
-	margin: 10px auto;
-	border: thin solid #58A7C6;
-	border-radius: 1%;
+	padding: 10px 25px;
 }
 
-form{
-	widows: 75%;
-	position: relative;
+#contactArticle{
+	background: rgb(224, 229, 231);
+	margin: 15px 25px;
 }
 
-
-.titleTable{
-	text-align: left;
-	color: #490D27;
-	font-size: 20pt;
-	text-decoration: underline;
-	margin: 5px 0px;
-}
-
-label{
-	font-size: 14pt;
-	font-weight: bold;
-	margin-right: 50px; 
-	width: 30px;
-}
-
-
-.textBox{
-	width: 70%;
-	height: 50px;
-	margin: 5px;
-	font-size: 14pt;
-	width: 75%;
-}
-
-#formTable{
+#messageArticle{
 	width: 80%;
-	position: relative;
-	margin: auto;
-	padding: 10px 0px;
+	min-width: 230px;
 }
 
+#formContact{
+	display: flex;
+	flex-direction: column;
+}
 
-
-
-
-th{
-	font-size: 26pt;
-	color: #490D27;
+form p{
+	color: rgb(150, 150, 129);
+	font-size: 12pt;
 }
 
 label{
-	font-size: 14pt;
 	font-weight: bold;
-	margin-right: 50px; 
-	width: 200px;
+	font-size: 13pt;
+	color: rgb(78, 72, 72);
+	display: flex;
+	text-transform: uppercase;
 }
 
-.textBox{
-	width: 600px;
-	height: 50px;
-	margin: 5px;
+label div{
+	color: rgb(218, 0, 0);
+	font-size: 16pt;
+}
+
+input{
 	font-size: 14pt;
-	width: 75%;
+	padding: 5px;
+	margin-top: 2px;
+	margin-bottom: 20px;
+	border-radius: 5px;
 }
 
 textarea{
 	font-size: 14pt;
-	margin: 5px;
-	width: 75%;
-	overflow: hidden;
+	padding: 5px;
+	margin: 10px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
 }
 
+.contactTitle{
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 14pt;
+	color:rgb(218, 0, 0);
+}
 
-.bottoni{
-	margin: 20px 0px;
-	font-size: 11pt;
-	width: 130px;
-	height: 30px;
-	border-radius: 5%;
+#myEmail{
+	text-transform: lowercase;
+}
+
+#myAddress{
+	text-transform: capitalize;	
+}
+
+#myEmail, #myAddress, #myPhone, #myCell{
+	font-style: italic;
+	word-spacing: 1px;
+}
+
+#containerButton{
+	display: flex;
+	justify-content: flex-end;
+	flex-flow: row wrap;
+}
+
+button{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px 5px 0px 0px;
+	width: 150px;
+	height:30px;
+	min-width: 150px;
+}
+
+#buttonSubmit{
+	margin-right: 20px;
+	border-bottom: 3px solid green;
+	background: #a5ffa0;
+}
+
+#buttonSubmit:hover{
+	background: #4bd845;
+}
+
+#buttonReset{
+	border-bottom: 3px solid rgb(209, 206, 8);
+	background: #f5ec75;
+}
+
+#buttonReset:hover{
+	background: #ebde27;
 }

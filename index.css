@@ -5,102 +5,82 @@
  Melanzana per scrittura: #490D27
 */
 
+/**************************************ARTICLE 1***********************************************/
+#articleImageName{
+	display: flex;
+	justify-content: flex-start;
+}
 
-/************************SECTION****************************/
-
-section{
-	margin: 20px auto 50px auto;
-	width: 75%;
-	background: whitesmoke;
-	border: thin solid #58A7C6;
-	border-radius: 1%;
+#containerBaseInfo{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
 	padding-right: 10px;
 	padding-bottom: 20px;
+	margin: 0px auto 20px auto;
 }
 
-
-article{
-	clear: both;
-	width: 100%
-}
-/***********************************************************/
-
-
-
-/*************************Article 1*************************/
-figure{
-	float: left;
-	margin: 20px 50px 20px 20px;
+#divName{
+	margin-bottom: 5px;
 }
 
-.imageClass {
-	width: 150px;
-	height:150px;
-}
-
-
-.divNameClass{
-	padding: 20px 0px 0px 0px;
-	font-size: 28pt;
-	color: #58A7C6;
-}
-
-.divSubtitleClass{
+#divSub{
 	color: #490D27;
-	font-size: 18pt;
+	font-size: 16pt;
+	margin-bottom: 10px;
+}
+
+section{
+	/*Dovrebbe vincere questa regola essendo flex tutte le section (regola generale inserita in Common)*/
+	flex-direction: column;
+}
+
+#socialDiv{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 400px;
 }
 
 
-.socialCell{
-	width: 100px;
-}
-
-.socialTable{
-	margin: 10px 0px;
-}
-
-/*********************************************************/
 
 
+/***********************************************ARTICLE 2******************************************/
+#articleAbout{
 
-/**********************Article 2**************************/
-.colonna1{
-	padding: 0px 20px 10px 0px;
-	font-weight: bold;
-	border: thin solid #EEE;	
-	color: #490D27;
-}
-
-.colonna2{
-	padding: 0px 20px 10px 0px;
-	font-style:italic;
-	background: #EEE;
-	border: thin solid #EEE;
-}
-
-.divInfoTableClass{
-	margin: 0px 20px;
-}
-
-.infoTableClass{
-	float: left;
-	margin: 10px 20px 0px 10px;
-	border: thin solid #EEE;
-	border-collapse: collapse;
 }
 
 .titoloParagrafo{
 	color:  #490D27;
 	font-size: 18pt;
-	padding: 0px 0px 5px 0px;
+	margin: 30px 0px 0px 40px;
 }
 
 p{
-	color: #222;
-	font-size: 14pt;
+	color: rgb(150, 150, 129);
+	font-size: 12pt;
+	margin: 5px 40px 20px 40px;
+	padding: 0px 0px 20px 0px;
+	border-bottom: 2px solid #EEE;
 }
 
+.tableStyle{
+	margin: 10px auto;
+	border: thin solid #EEE;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
 
+.rowTable{
+	display: flex;
+	flex-direction: row;
+}
 
+.colonna1{
+	flex-basis: 20%
+}
 
-
+.colonna2{
+	flex-basis: 80%;
+}

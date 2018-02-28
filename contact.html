@@ -10,94 +10,94 @@
 </head>
 <body onload="loadInformation();">
 	<header>
-		<h1 id="headerName" class="centratura capitalizzazione"> <div id="headerSurname" class="maiuscolo allineato capitalizzazione"></div></h1>
-		<h2> Software Engeneer </h2><br><br>
-		<nav class="externIcon centratura">
-			<div class="internIcon backgroundLink">
-				<a href="index.html">
-					<img src="ico/casa.png" class="linkIcon centratura">
-				</a>	
-			</div>			
+		<h1 id="headerName" class="capitalizzazione"> <div id="headerSurname" class="maiuscolo"></div></h1>
+		<h2> Software Engineer </h2><br><br>
+		<nav>
+			<a href="index.html" class="backgroundLink" title="Vai alla home">
+				<img src="ico/casa.png" class="dimensionNavigationLink" title="Ricarica">
+			</a>	
 
-			<div class="internIcon backgroundLink">
-				<a href="contact.html">
-					<img src="ico/contactme.png" class="linkIcon centratura">
-				</a>	
-			</div>			
+			<a href="contact.html" class="backgroundLink">
+				<img src="ico/refresh.png" class="dimensionNavigationLink">
+			</a>			
 	
 		</nav>
 	</header>
 
 	<main>
 		<section>
-			<article>
+			<article id="messageArticle">
 				<form action="" method="post" class="centratura" id="formContact">
-					<table id="formTable" class="centratura">
-						<tr class="titleTable">
-							<th colspan="2">Scrivimi</th>
-						</tr>
-						<tr>
-							<td><label for="name.first">Nome: </label></td>
-							<td><input type="text" id="name.first" name="name.first" class="textBox" placeholder="Scrivi il tuo nome..."> </td>
-						</tr>
-						<tr>
-							<td><label for="name.last">Cognome: </label></td>
-							<td><input type="text" id="name.last" name="name.last" class="textBox" placeholder="Scrivi il tuo cognome..."></td>
-						</tr>
-						<tr>
-							<td><label for="email">E-Mail: </label></td>
-							<td><input type="email" id="email" name="email" class="textBox" placeholder="Scrivi la tua e-mail..."> </td>
-						</tr>
-						<tr>
-							<td></td>
-							<td>							
-								<textarea id="msg" rows="10" placeholder="Lasciami un messaggio..."></textarea>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<input id="submitButton" type="button" class="bottoni" value="Inoltra messaggio">
-								<input type="reset" class="bottoni" value="Ripristina">								
-							</td>
-						</tr>
-					</table>
+					<div class="titleStyle">Scrivimi</div>
+					<p>
+						Per ogni tua domanda, delucidazione o anche curiosità, scrivimi e non appena potrò
+						ti ricontatterò sulla mail che mi indichi in basso.
+					</p>
+
+					<label for="name.first">Nome <div>*</div> </label>
+					<input type="text" id="name.first" name="name.first" class="textBox" placeholder="Scrivi il tuo nome...">
+
+					<label for="name.last">Cognome <div>*</div> </label>
+					<input type="text" id="name.last" name="name.last" class="textBox" placeholder="Scrivi il tuo cognome...">
+
+					<label for="email">E-Mail <div>*</div> </label>
+					<input type="email" id="email" name="email" class="textBox" placeholder="Scrivi la tua e-mail...">
+
+					<textarea id="msg" rows="10" placeholder="Lasciami un messaggio..."></textarea>
+
+					<div id="containerButton">
+						<button type="submit" id="buttonSubmit">Inoltra messaggio</button>
+						<button type="reset" id="buttonReset">Ripristina tutto</button>
+					</div>
+
 				</form>			
-			</article>			
+			</article>	
+			
+			<article id="contactArticle">
+				<p class="paragrafoContactArticle">
+					<div class="contactTitle">email</div>
+					<div id="myEmail">prova@prova.it</div>
+				</p>
+				<p class="paragrafoContactArticle">
+					<div class="contactTitle">telefono</div>
+					<div id="myPhone">1232435634</div>
+				</p>
+				<p class="paragrafoContactArticle">
+					<div class="contactTitle">cellulare</div>
+					<div id="myCell">7654326754</div>
+				</p>
+				<p class="paragrafoContactArticle">
+					<div class="contactTitle">indirizzo</div>
+					<div id="myAddress">rfbidvmfvsio</div>
+				</p>
+			</article>
 		</section>		
 	</main>
 
 	<footer>
-		<div class="borderDotted">
-			<div class="titleSectionFooter">Copyright: </div>
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea cupiditate repellat at libero esse, voluptates ipsam nostrum fuga, consequuntur veniam hic architecto non facere nulla aperiam eos rem voluptate distinctio.
-		</div>
-		<div>
-			<table>
-				<th class="titleSectionFooter">
+			<div class="borderDotted footerItem" id="footerItem1">
+				<div class="titleSectionFooter">Copyright: </div>
+				I contenuti presenti sulla pagina attuale e su tutte quelle ad essa associate, sono di proprietà dell'autore del blog e pertanto non possono essere copiati,riprodotti,pubblicati o redistribuiti perché appartenenti all'autore stesso. 
+E’ vietata la copia e la riproduzione dei contenuti in qualsiasi modo o forma. 
+E’ vietata la pubblicazione e la redistribuzione dei contenuti non autorizzata espressamente dall’autore.<br>
+All right reserved.
+			</div>
+			<div class="footerItem">
+				<div class="titleSectionFooter">
 					Social:
-				</th>
-				<tr>
-					<td>
-						<a href="" target="_blank" title="Facebook.com"><img src="ico/facebook.png" alt="facebook.it" class="socialIcon"></a>
-					</td>
-					<td>
-						<a href="" target="_blank" title="Instagram.com"><img src="ico/insta.png" alt="instagram.com" class="socialIcon"></a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="" target="_blank" title="LinkedIn.com"><img src="ico/linke.png" alt="linkedin.com" class="socialIcon"></a>
-					</td>
-					<td>
-						<a href="" target="_blank" title="Twitter.com"><img src="ico/twitter.png" alt="twitter.com" class="socialIcon"></a>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</footer>
+				</div>
+				<div>
+					<a href="#" title="Facebook.it"><i id="social-fb" class="fab fa-facebook-f fa-2x socialFooter"></i></a>
+					<a href="#" title="Instagram.com"><i id="social-insta" class="fab fa-instagram fa-2x socialFooter"></i></a>
+					<a href="#" title="Linkedin.com"><i id="social-in" class="fab fa-linkedin-in fa-2x socialFooter"></i></a>
+					<a href="#" title="Twitter.com"><i id="social-tw" class="fab fa-twitter fa-2x socialFooter"></i></a>
+				</div>
+			</div>
+		</footer>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="node_modules/jquery-easy-loading/dist/jquery.loading.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="commonScript.js"></script>
 	<script src="scriptContact.js"></script>
 </body>

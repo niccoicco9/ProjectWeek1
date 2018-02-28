@@ -1,0 +1,5 @@
+https://www.searchenginejournal.com/25-amazing-contact-us-pages/
+
+Ricordati che dovresti poter fissare header e footer con il flex: in pratica 
+dovresti poter andare a dare una dimensione al main con grow (tipo grow 2) 
+in modo da fissare tutto

@@ -10,20 +10,16 @@
 </head>
 <body onload="loadInformation();">
 	<header>
-		<h1 id="headerName" class="centratura capitalizzazione"> <div id="headerSurname" class="maiuscolo allineato capitalizzazione"></div></h1>
+		<h1 id="headerName" class="capitalizzazione"> <div id="headerSurname" class="maiuscolo"></div></h1>
 		<h2> Software Engineer </h2><br><br>
-		<nav class="externIcon centratura">
-			<div class="internIcon backgroundLink">
-				<a href="index.html">
-					<img src="ico/casa.png" class="linkIcon centratura">
-				</a>	
-			</div>			
+		<nav>
+			<a href="index.html" class="backgroundLink" title="Ricarica">
+				<img src="ico/refresh.png" class="dimensionNavigationLink">
+			</a>	
 
-			<div class="internIcon backgroundLink">
-				<a href="contact.html">
-					<img src="ico/contactme.png" class="linkIcon centratura">
-				</a>	
-			</div>			
+			<a href="contact.html" class="backgroundLink" title="Contattami">
+				<img src="ico/contactme.png" class="dimensionNavigationLink">
+			</a>			
 	
 		</nav>
 	</header>
@@ -37,53 +33,52 @@
 
 			<!-- Con questo primo article identifico la nome, cognome, 
 			immagine profilo ed eventuali profili social. -->
-			<article>
+			<article id="articleImageName">
 				<figure>
 					<img id="idFigure" class="imageClass">				
 				</figure>
 
-				<div id="divName" class="divNameClass capitalizzazione"></div>
-				<div id="divSub">Software Engineer</div>	
-				<table class="socialTable">
-					<tr>
-						<td class="socialCell"><img src="ico/facebook.png" class="socialIcon"></td>
-						<td class="socialCell"><img src="ico/insta.png" class="socialIcon"></td>
-						<td class="socialCell"><img src="ico/linke.png" class="socialIcon"></td>
-						<td class="socialCell"><img src="ico/twitter.png" class="socialIcon"></td>
-					</tr>
-				</table>
+				<div id="containerBaseInfo">
+					<div id="divName" class="titleStyle capitalizzazione"></div>
+					<div id="divSub">Software Engineer</div>	
+					<div id="socialDiv">
+						<a href="#" title="Facebook.it"><img src="ico/facebook.png" class="socialIcon"></a>
+						<a href="#" title="Instagram.com"><img src="ico/insta.png" class="socialIcon"></a>
+						<a href="#" title="Linkedin.com"><img src="ico/linke.png" class="socialIcon"></a>
+						<a href="#" title="Twitter.com"><img src="ico/twitter.png" class="socialIcon"></a>
+					</div>
+				</div>
 			</article>
 
 			<!-- Con il secondo article identifico le informazioni sulla persona
 			in forma tabellare prima e poi un riassunto dello stesso. -->
 			<article>
-				<div id="infoTable" class="divInfoTableClass">
-					<table id="idTabella" class="infoTableClass">
-						<tr>
-							<td class="colonna1">Età</td>
-							<td class="colonna2" id="dataAge"></td>
-						</tr>
-						<tr>
-							<td class="colonna1">Indirizzo</td>
-							<td class="colonna2" id="dataAddress"></td>
-						</tr>
-						<tr>
-							<td class="colonna1">E-Mail</td>
-							<td class="colonna2" id="dataEmail"></td>						
-						</tr>
-						<tr>
-							<td class="colonna1">Telefono</td>
-							<td class="colonna2" id="dataPhone"></td>						
-						</tr>
-						<tr>
-							<td class="colonna1">Cellulare</td>
-							<td class="colonna2" id="dataMobile"></td>						
-						</tr>
-					</table>
+				<div id="idTabella" class="tableStyle">
+					<div class="rowTable">
+						<div class="colonna1" id="columnAge">Età</div>
+						<div class="colonna2" id="dataAge"></div>
+					</div>
+					<div class="rowTable">
+						<div class="colonna1" id="columnAddress">Indirizzo</div>
+						<div class="colonna2" id="dataAddress"></div>
+					</div>
+					<div class="rowTable">
+						<div class="colonna1" id="columnEmail">E-Mail</div>
+						<div class="colonna2" id="dataEmail"></div>						
+					</div>
+					<div class="rowTable">
+						<div class="colonna1" id="columnPhone">Telefono</div>
+						<div class="colonna2" id="dataPhone"></div>						
+					</div>
+					<div class="rowTable">
+						<div class="colonna1" id="columnCell">Cellulare</div>
+						<div class="colonna2" id="dataMobile"></div>						
+					</div>
 				</div>
+
+				<div class="titoloParagrafo">About me</div>
 				<p>
-					<div class="titoloParagrafo">About me</div>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odit vel expedita sequi dignissimos amet ullam dolorem illum deleniti impedit. Veniam officiis hic quo numquam vitae laborum eius consequuntur non.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odit vel expedita sequi dignissimos amet ullam dolorem illum deleniti impedit. Veniam officiis hic quo numquam vitae laborum eius consequuntur non.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odit vel expedita sequi dignissimos amet ullam dolorem illum deleniti impedit. Veniam officiis hic quo numquam vitae laborum eius consequuntur non.
 				</p>
 			</article>
@@ -91,36 +86,27 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odit vel exped
 	</main>
 
 	<footer>
-		<div class="borderDotted">
+		<div class="borderDotted footerItem" id="footerItem1">
 			<div class="titleSectionFooter">Copyright: </div>
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea cupiditate repellat at libero esse, voluptates ipsam nostrum fuga, consequuntur veniam hic architecto non facere nulla aperiam eos rem voluptate distinctio.
-		</div>
-		<div>
-			<table>
-				<th class="titleSectionFooter">
-					Social:
-				</th>
-				<tr>
-					<td>
-						<a href="" target="_blank" title="Facebook.com"><img src="ico/facebook.png" alt="facebook.it" class="socialIcon"></a>
-					</td>
-					<td>
-						<a href="" target="_blank" title="Instagram.com"><img src="ico/insta.png" alt="instagram.com" class="socialIcon"></a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="" target="_blank" title="LinkedIn.com"><img src="ico/linke.png" alt="linkedin.com" class="socialIcon"></a>
-					</td>
-					<td>
-						<a href="" target="_blank" title="Twitter.com"><img src="ico/twitter.png" alt="twitter.com" class="socialIcon"></a>
-					</td>
-				</tr>
-			</table>
+			I contenuti presenti sulla pagina attuale e su tutte quelle ad essa associate, sono di proprietà dell'autore del blog e pertanto non possono essere copiati,riprodotti,pubblicati o redistribuiti perché appartenenti all'autore stesso. 
+E’ vietata la copia e la riproduzione dei contenuti in qualsiasi modo o forma. 
+E’ vietata la pubblicazione e la redistribuzione dei contenuti non autorizzata espressamente dall’autore.<br>
+All right reserved.</div>
+		<div class="footerItem">
+			<div class="titleSectionFooter">
+				Social:
+			</div>
+			<div>
+				<a href="#" title="Facebook.it"><i id="social-fb" class="fab fa-facebook-f fa-2x socialFooter"></i></a>
+				<a href="#" title="Instagram.com"><i id="social-insta" class="fab fa-instagram fa-2x socialFooter"></i></a>
+				<a href="#" title="Linkedin.com"><i id="social-in" class="fab fa-linkedin-in fa-2x socialFooter"></i></a>
+				<a href="#" title="Twitter.com"><i id="social-tw" class="fab fa-twitter fa-2x socialFooter"></i></a>
+			</div>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="node_modules/jquery-easy-loading/dist/jquery.loading.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="commonScript.js"></script>
 	<script src="scriptPerson.js"></script>
 </body>

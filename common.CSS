@@ -4,9 +4,19 @@
  Giallo per sottotitoli: #FDE58B
  Melanzana per scrittura: #490D27
 */
+/*----------------------------------------GENERALI-------------------------------------------*/
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	min-width: 240px;
+}
 
-/******************************GENERALI************************************/
 body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
@@ -14,28 +24,10 @@ body{
 	color: #222;
 }
 
-
 .maiuscolo{
 	font-weight: bold;
 }
 
-
-.centratura{
-	margin: auto;
-}
-
-
-/*Colore di sfondo dei link: per un eventuale menù aggiuntivo.*/
-.backgroundLink{
-	background: whitesmoke;
-}
-
-.backgroundLink:hover{
-	background: #f49e42;
-}
-
-
-/*Comportamento degli anchor tag*/
 a{
 	color: inherit;
 	text-decoration: none;
@@ -46,124 +38,149 @@ a:visited{
 	text-decoration: none;
 }
 
-
 /*Definisce le proprietà delle immagini dei social*/
 .socialIcon{
 	width: 30px;
 	height: 30px;
-	margin: 0px auto;
 }
 
 
 .capitalizzazione{
 	text-transform: capitalize;
 }
-/**************************************************************************/
+
+/*Colore di sfondo dei link: per un eventuale menù aggiuntivo.*/
+.backgroundLink{
+	background: whitesmoke;
+}
+
+.backgroundLink:hover{
+	background: #f49e42;
+}
+
+section{
+	background: whitesmoke;
+	width: 80%;
+	border: thin solid #58A7C6;
+	border-radius: 1%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	min-width: 350;
+}
+
+.titleStyle{
+	font-size:22pt;
+	font-style:normal;
+	font-weight: 500;
+	color: #58A7C6;
+	letter-spacing: 5px;
+	letter-spacing: 5px;
+	margin: 10px 0px 0px 0px;
+}
+
+.colonna1{
+	padding: 0px 20px 10px 0px;
+	font-weight: bold;
+	border: thin solid #EEE;	
+	color: #490D27;
+}
+
+.colonna2{
+	padding: 0px 20px 10px 0px;
+	font-style:italic;
+	background: #EEE;
+	border: thin solid #EEE;
+}
+
+main{
+	flex-grow: 2;
+}
 
 
 
 
 
-
-
-/********************************HEADER************************************/
+/*------------------------------------------------HEADER-----------------------------------------------*/
 header{
-	width: 100%;
-	padding: 30px 0px 30px 0px;
-	margin: 0px;
-	height: 200px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	background: #58A7C6;
 }
 
-
-/*Vado a specializzare la visualizzazione della barra di navigazione*/
-.externIcon{
-	display: table;
+.dimensionNavigationLink{
+	width: 50px;
+	height: 50px;
 }
 
-/* Vado a specializzare il comportamento dello sfondo degli elementi dei
-bottoni della barra di navigazione. */
-.internIcon{
-	display: inline-block;
-	margin: 0px 20px;
-	width: 70px;
-	height: 70px;
-	border-radius: 100%;
-	margin: 0px 10px;
-	border: thin solid #58A7C6;
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
-
-/*Definisce lo stile del titolo*/
-h1{
+#headerName{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: #490D27;
 	font-weight: normal;
-	font-size: 44pt;
-	letter-spacing: 15px;
-	text-align: center;
-	color:#490D27;
-	font-family: Helvetica, Arial, sans-serif;
+	font-size: 22pt;
 }
 
-/*Ci sono tanti caratteri che emulano la firma online: non appena il professore lo permette 
-inseriscilo da url esterno.*/
+#headerSurname{
+	padding: 0px 10px 0px 10px;
+}
+
 h2{
+	margin: auto;
 	font-style: italic;
 	font-size: 24pt;
 	font-family: SignPainter, Noteworthy, Palatino Linotype, Palatino;
-	margin: 0px;
+	color: #FDE58B;
 	text-align: center;
-	color: #FDE58B;
+}
+
+nav a{
+	height:70px;
+	width:70px;
+	border-radius: 100%;
+	margin: 0px 20px 20px 20px;
+	background: whitesmoke;
+	display: flex;
+	justify-content: center;
+}
+
+nav a img{
+	align-self: center;
 }
 
 
-.linkIcon{
-	width: 50px;
-	height: 50px;
-	padding: 10px 0px 0px 0px;
-	display: block;
-}
-
-
-#headerSurname{
-	display: inline-block;
-}
-/**************************************************************************/
 
 
 
-
-
-
-
-/********************************FOOTER************************************/
+/*------------------------------------------------FOOTER-----------------------------------------------*/
 footer{
-	width: 100%;
-	color: #FDE58B;
-	background:  #58A7C6;
-	font-size: 12pt;
-	display: inline-block;
-	position: relative;
+	background: #58A7C6;
+	display: flex;
 	bottom: 0px;
+	color: #FDE58B;
+	font-size: 10pt;
 }
 
+#footerItem1{
+	flex-basis: 30%;
+}
 
-footer div{
-	width: 300px;
-	font-style:italic;
-	float: left;
-	margin-left: 20px;
-	padding-right: 20px;
-	margin-bottom: 20px;
-	padding-top: 20px;
+.footerItem{
+	padding: 10px;
+	margin: 10px 10px;
 }
 
 .borderDotted{
 	border-right: thin dotted whitesmoke;
-}
-
-
-footer div table tr td{
-	padding: 10px 20px;
 }
 
 .titleSectionFooter{
@@ -175,9 +192,25 @@ footer div table tr td{
 	margin: 0px 0px 10px 0px;
 }
 
-/*************************************************************************/
 
+.footerItem div{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+	align-items: center;
+}
 
+.footerItem div a{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	margin-right: 10px;
+	padding-top: 5px;
+	border-radius: 3px;
+}
 
-
-
+.footerItem div a:hover{
+	background: #509ab7;
+}
